@@ -3,6 +3,14 @@
 ## Preview URL
 `https://douban_stats_widget.web.cloudendpoint.cn/?id=152076608`
 
+using following code to embed this widget to your blog, Github readme, and etc.
+
+```html
+<img src="https://qce78q.api.cloudendpoint.cn/generateDoubanStatsSvg?id=152076608&type=movie" />
+``` 
+
+<img src="https://qce78q.api.cloudendpoint.cn/generateDoubanStatsSvg?id=152076608&type=movie" />
+
 ### Query Params
 > id: your douban id, i.e. the last int string in this URL https://movie.douban.com/people/152076608
 
@@ -12,7 +20,7 @@
 
 ### feel free to submit MR to help me!
 
-- [ ] use canvas to render components to img just like github_stats_card
+- [x] use canvas to render components to img just like github_stats_card
 
 - [ ] add medium size card
 
