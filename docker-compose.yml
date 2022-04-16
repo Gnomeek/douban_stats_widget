@@ -2,6 +2,7 @@ version: '3'
 services:
   node-app:
     build: .
+    restart: always
     ports:
       - "8080:8080"
 
