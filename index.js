@@ -8,13 +8,11 @@ app.get("/douban", async (req, res) => {
   if (!("id" in req.query)) {
     res.send("requests without doubanID")
   }
-  console.log(`test: ${req.query}`)
   var id = req.query.id
   var type = "movie"
   if ("type" in req.query) {
     type = req.query.type
   }
-  console.log(id, type)
   res.setHeader('Content-Type', 'image/svg+xml');
   res.setHeader('Cache-Control', 'public, max-age=6000');
   var stats = await api.callDoubanAPI(id)
