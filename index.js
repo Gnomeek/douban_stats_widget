@@ -8,10 +8,11 @@ app.get("/douban", async (req, res) => {
   if (!("id" in req.query)) {
     res.send("requests without doubanID")
   }
+  console.log(`test: ${req.query}`)
   var id = req.query.id
   var type = "movie"
   if ("type" in req.query) {
-    type = req.params.type
+    type = req.query.type
   }
   console.log(id, type)
   res.setHeader('Content-Type', 'image/svg+xml');
@@ -21,5 +22,5 @@ app.get("/douban", async (req, res) => {
   res.send(result);
 });
 
-app.listen("8080");
+app.listen(process.env.PORT || 8080);
 
