@@ -3,6 +3,13 @@
 ## Deploy with Docker
 run `docker-compose up`, `localhost:8080/douban/?id=152076608` will show the douban widget
 
+## Deploy to Heroku
+
+
+<a href="https://heroku.com/deploy?template=https://github.com/Gnomeek/douban_stats_widget">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+
 ## Preview URL
 `https://doubanstatswidget.herokuapp.com/douban?id=152076608`
 
