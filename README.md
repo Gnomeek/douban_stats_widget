@@ -1,5 +1,8 @@
 # douban_stats_widget
 
+## Deploy with Docker
+run `docker-compose up`, `localhost:8080/douban/?id=152076608` will show the douban widget
+
 ## Preview URL
 `https://douban_stats_widget.web.cloudendpoint.cn/?id=152076608`
 
@@ -21,8 +24,8 @@ using following code to embed this widget to your blog, Github readme, and etc.
 ### feel free to submit MR to help me!
 
 - [x] use canvas to render components to img just like github_stats_card
-
 - [ ] add medium size card
+- [ ] move API from inspirecloud to Heroku/Vercel 
 
 ## Project setup
 ```
